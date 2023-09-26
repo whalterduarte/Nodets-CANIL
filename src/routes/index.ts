@@ -1,4 +1,7 @@
+//Express
 import { Router } from 'express';
+
+//Import
 import * as pageController from '../controllers/pageController';
 import * as searchController from '../controllers/searchController';
 const router = Router(); 
@@ -12,5 +15,6 @@ router.get('/fishes',pageController.fishes);
 //Search
 router.get('/search', searchController.search)
 
-export default router; // Exportando todos router
+// Exportando todos router
+export default router; 
 
